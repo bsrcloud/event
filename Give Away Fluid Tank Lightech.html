@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Give Away Fluid Tank Lightech</title>
+<style>
+  /* Reset and base styles */
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fcdc23; /* warna kuning cerah */
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+  a {
+    text-decoration: none !important;
+    color: inherit;
+  }
+  /* Container */
+  .container {
+    max-width: 400px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px 25px 40px;
+    box-sizing: border-box;
+  }
+
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .logo img {
+    max-height: 40px;
+    user-select: none;
+    pointer-events: none;
+  }
+  .logo-text {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    user-select: none;
+  }
+
+  /* Giveaway banner - background block behind text */
+  .giveaway-section {
+    position: relative;
+    background: #fcdc23; /* yellow */
+    margin-bottom: 25px;
+    border-radius:10px;
+  }
+
+  /* Product image */
+  .product-img-wrap {
+    position: absolute;
+    left: -40px;
+    top: 18px;
+    background: white;
+    border-radius: 0px 40px 40px 0px;
+    padding: 8px;
+    box-sizing: border-box;
+    max-width: 150px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+  }
+  .product-img-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 40px;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .giveaway-text {
+    margin-left: 40px;
+    padding: 10px 15px 15px 120px;
+    box-sizing: border-box;
+  }
+  .giveaway-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    font-weight: 100;
+    display: inline-block;
+    padding: 5px 10px;
+    background: #228b22;
+    color: black;
+    margin-bottom: 15px;
+  }
+  .product-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+  }
+  .highlight-blue {
+    font-weight: 800;
+    color: white;
+    background-color: #d42227;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 3px;
+  }
+
+  /* User box */
+  .user-box {
+    background: white;
+    border-radius: 20px;
+    padding: 15px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    user-select: none;
+  }
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+  }
+  .user-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ccc;
+    user-select: none;
+    pointer-events: none;
+  }
+  .user-name {
+    font-size: 22px;
+    color: #d42227;
+    font-weight: 600;
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  }
+
+  /* Buttons */
+  button {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 0;
+    margin: 10px 0;
+    font-family: 'Impact', Arial, sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 2px 5px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  #subscribe-btn {
+    background-color: #d42227;
+    color: #fcdc23;
+  }
+  #subscribe-btn:hover {
+    background-color: #a31a1f;
+  }
+  #register-btn {
+    background-color: #d42227;
+    color: #fcdc23;
+  }
+  #register-btn:hover {
+    background-color: #a31a1f;
+  }
+
+  .register-note {
+    font-style: italic;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  .footer-text {
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Prevent image download & right click */
+  img {
+    -webkit-user-drag: none;
+    user-drag: none;
+    user-select: none;
+    pointer-events: none;
+  }
+  img::selection {
+    background: transparent;
+  }
+  img {
+    -webkit-touch-callout: none;
+  }
+  img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo" aria-label="Logo Lightech">
+    <img src="https://github.com/bsrcloud/event/raw/refs/heads/main/lightech-logo-tagline.png" alt="Lightech Logo" />
+  </div>
+
+  <div class="giveaway-section" aria-label="Giveaway section">
+    <div class="product-img-wrap">
+      <img src="https://github.com/bsrcloud/event/raw/refs/heads/main/BackgroundEraser_20250815_010833268.png" alt="Fluid Tank Lightech Blue" />
+    </div>
+    <div class="giveaway-text">
+      <div class="giveaway-title" aria-label="Give Away text">Give Away</div>
+      <p class="product-name" aria-label="Product name">
+        Fluid Tank Lightech <span class="highlight-blue">Blue</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="user-box" aria-label="User subscription section">
+    <div class="user-profile">
+      <img src="https://github.com/bsrcloud/event/raw/refs/heads/main/Screenshot_20250815-015822.png" alt="User Avatar" />
+      <div class="user-name">ANDI Gaming <br />@andi.gaming662</div>
+    </div>
+    <button id="subscribe-btn" aria-label="Subscribe Button"><a href="https://youtube.com/@andi.gaming662?si=1dWNXsU5kHijrUL6">SUBSCRIBE</a> </button>
+    <p class="register-note">Register yourself by clicking the button below</p>
+    <button id="register-btn" aria-label="Register Button"><a href="https://ai.bsrifa.com/2025/08/andigaming.html?m=1">REGISTER</a></button>
+    <p class="register-note" style="font-style:normal; color:#d42227;">no charge whatsoever</p>
+  </div>
+
+  <div class="footer-text">www.lightechuk.com</div>
+</div>
+</body>
+</html>
